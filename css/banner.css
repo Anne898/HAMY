@@ -1,0 +1,45 @@
+.banner{
+    height: 550px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7cfdf;
+    z-index: -2;
+
+}
+
+.banner-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+
+}
+
+.banner-info{
+    padding:0 3em;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+}
+
+.banner-title{
+    line-height: 1.5;
+    font-size: 80px;
+}
+.banner-title2{
+
+font-size: 30px;
+}
+
+.banner-p{
+    line-height: 2;
+    opacity: 0.9;
+    margin-top: 1em;
+}
+

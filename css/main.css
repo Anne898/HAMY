@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+}
+
+body p {
+    color: #311f00;
+    margin: 0;
+    font-size: 17px;
+    font-family: 'Delius',cursive, sans-serif;
+}
+
+body h1 {
+    color: #311f00;
+    font-family: 'Pacifico', cursive;
+
+}
+
+span{
+    font-family: 'Delius',cursive, sans-serif;
+
+}
+body h2, h3 {
+    color: #311f00;
+    font-family: 'Delius',cursive, sans-serif;
+
+}
+
+body {
+    background-color: rgb(255, 246, 247);
+}

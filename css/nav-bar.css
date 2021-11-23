@@ -1,0 +1,139 @@
+.container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 150px;
+    height: 60px;
+    background-image: url("../imagenes/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.logo {
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.site-nav {
+    top: 100%;
+    right: 0;
+    position: absolute;
+    background: #BF6074;
+    height: 0;
+    overflow: hidden;
+}
+
+.site-nav-open {
+    height: auto;
+}
+
+.site-nav ul {
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav li:last-child {
+    border-bottom: none;
+}
+
+.site-nav li {
+    border-bottom: 1px solid #80404E;
+    margin-top: 20px;
+}
+
+.site-nav a {
+    color: #fff5ee;
+    display: block;
+    padding: 2em 6em;
+    text-decoration: none;
+    font-family: 'Delius', cursive, sans-serif;
+}
+
+.site-nav a:hover, .site-nav a:focus {
+    background: #E6738C;
+}
+
+.menu-toggle {
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+
+.hamburguer, .hamburguer::after, .hamburguer::before {
+    content: '';
+    display: block;
+    background-color: #8A4A52;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+}
+
+.hamburguer::before {
+    transform: translateY(-6px);
+}
+
+.hamburguer::after {
+    transform: translateY(3px);
+}
+
+.site-nav--icon {
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: #fff5ee;
+}
+
+@media (min-width:800px) {
+    .menu-toggle {
+        display: none;
+    }
+    .site-nav {
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        margin-right: 10px;
+        clip-path: initial;
+    }
+    .site-nav li {
+        display: inline-block;
+        border: none;
+    }
+    .site-nav a {
+        padding: 0;
+        margin-left: 3em;
+        color: #8A4A52;
+    }
+    .site-nav--icon {
+        color: #8A4A52;
+    }
+    .site-nav a:hover, .site-nav a:focus {
+        background: transparent;
+        color: #6B3A40;
+    }
+}
