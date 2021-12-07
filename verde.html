@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/verde.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+    <title>HAMY</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container-nav">
+
+            <div class="container">
+                <div class="logo"></div>
+            </div>
+
+            <nav id="site-nav" class="site-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-star site-nav--icon"></i>HAMY</a></li>
+                    <li><a href="#contact"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
+                <div class="hamburguer">
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <a name="design">
+        <h1 class="title-pag">Color Verde </h1>
+    </a>
+
+
+    <div class="container-index">
+
+        <div onclick="SonidoCorrecto()" class="imagen content" id="content1">
+            <audio id="AudioCorrecto"> </audio>
+        </div>
+
+
+        <div onclick="SonidoIncorrecto()" class="imagen content" id="content2">
+            <audio id="AudioIncorrecto"> </audio>
+        </div>
+
+  
+      
+
+        </div>
+
+
+    </div>
+
+
+
+
+ 
+
+    <div class="footer">
+
+        <img class="img-footer" src="imagenes/logo.png">
+
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+            <a href="#"><i class="fab fa-whatsapp icon"></i></a>
+            <a href="#"><i class="fab fa-instagram icon"></i></a>
+        </div>
+
+        <a name="contact">
+
+            <footer style='text-align:left'>
+                <span class="footer-copy"><b>H</b>ugo</span>
+                <br>
+                <span class="footer-copy"><b>A</b>shley</span>
+                <br>
+                <span class="footer-copy"><b>M</b>ilka</span>
+                <br>
+                <span class="footer-copy"><b>Y</b>uzmiryth</span>
+            </footer>
+        </a>
+    </div>
+
+    <script src="js/Audio.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

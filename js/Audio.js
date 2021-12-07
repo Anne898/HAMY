@@ -10,6 +10,21 @@ let Naranja = document.getElementById("AudioNaranja");
 let Verde = document.getElementById("AudioVerde");
 let Cafe = document.getElementById("AudioCafe");
 
+let correcto = document.getElementById("AudioCorrecto");
+let incorrecto = document.getElementById("AudioIncorrecto");
+
+let opRosa = document.getElementById("AudioOpRosa");
+
+
+
+function SonidoOpRosa() {
+    if (sound) {
+        opRosa.src = "imagenes/opRosa.mp3";
+        opRosa.volume = 0.7;
+        opRosa.play();
+    }
+
+}
 
 function SonidoRosa() {
     if (sound) {
@@ -79,6 +94,25 @@ function SonidoVerde() {
         Verde.src = "imagenes/Verde.mp3";
         Verde.volume = 0.7;
         Verde.play();
+    }
+
+}
+
+function SonidoCorrecto() {
+    if (sound) {
+        correcto.src = "imagenes/correcto.mp3";
+        correcto.volume = 0.7;
+        correcto.play();
+    }
+
+}
+
+
+function SonidoIncorrecto() {
+    if (sound) {
+        incorrecto.src = "imagenes/incorrecto.mp3";
+        incorrecto.volume = 0.7;
+        incorrecto.play();
     }
 
 }
